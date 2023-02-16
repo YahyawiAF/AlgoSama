@@ -1,4 +1,4 @@
-import { Box, Divider, List, Typography } from "@mui/material";
+import { Box, Divider, IconButton, List, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { ReactComponent as Facebook } from "../../../assets/icons/Facebook.svg";
 import { ReactComponent as Instagram } from "../../../assets/icons/Instagram.svg";
@@ -44,6 +44,7 @@ const Footer = () => {
           sx={{
             display: "flex",
             alignItems: "center",
+
             // justifyContent: "start",
             // paddingLeft: "300px",
             // paddingBottom: "50px",
@@ -51,11 +52,16 @@ const Footer = () => {
             gap: "20px",
           }}
         >
-          <Facebook />
+          <IconButton href="https://www.facebook.com/AlgoSama-102888506041022">
+            <Facebook />
+          </IconButton>
 
-          <Instagram />
-
-          <Linkedin />
+          {/* <IconButton >
+            <Instagram />
+          </IconButton> */}
+          <IconButton href="https://www.linkedin.com/in/yahyawi-abdel-fatteh-675468141/">
+            <Linkedin />
+          </IconButton>
         </Box>
         <Box
           sx={{
@@ -76,7 +82,7 @@ const Footer = () => {
           >
             <Mail />
             <Typography fontSize={"32p"} color={"#FFFFFF"}>
-              algosama@gmail.com
+              abdelftt@gmail.com
             </Typography>
           </Typography>
           <Divider sx={{ border: "2px solid #FFFFFF", width: "250px" }} />
@@ -89,7 +95,7 @@ const Footer = () => {
           >
             <Phone />
             <Typography fontSize={"32p"} color={"#FFFFFF"}>
-              algosama@gmail.com
+              +216 27 802 073
             </Typography>
           </Typography>
         </Box>
