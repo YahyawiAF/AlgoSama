@@ -1,10 +1,6 @@
 import { useContext, useState } from "react";
 import useResponsive from "~/hooks/useResponsive";
-import { Box, alpha, IconButton, Tooltip, styled } from "@mui/material";
-import MenuTwoToneIcon from "@mui/icons-material/MenuTwoTone";
-import { SidebarContext } from "~/contexts/SidebarContext";
-import CloseTwoToneIcon from "@mui/icons-material/CloseTwoTone";
-import { ReactComponent as LogoWhite } from "../../../assets/icons/LogoWhite.svg";
+import { Box, alpha, styled } from "@mui/material";
 import { ReactComponent as Menu } from "../../../assets/icons/Menu.svg";
 import AlgosamaWhite from "../../../assets/images/AlgosamaWhite.png";
 import Navbar from "./Navbar/Navbar";
@@ -25,7 +21,6 @@ const HeaderWrapper = styled(Box)(
 );
 
 function Header() {
-  const { sidebarToggle, toggleSidebar } = useContext(SidebarContext);
   const [showMenu, setShowMenu] = useState(false);
   const smUp = useResponsive("down", "md");
   const HandleMenu = () => {

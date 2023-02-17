@@ -1,7 +1,6 @@
 import { FC, ReactNode, useContext } from "react";
 import { alpha, lighten, useTheme } from "@mui/material";
 import { Outlet } from "react-router-dom";
-import { SidebarContext } from "~/contexts/SidebarContext";
 import Header from "./Header";
 import Footer from "./Footer/Footer";
 import { ReactComponent as DropDown } from "../../assets/icons/DropDown.svg";
@@ -18,7 +17,6 @@ interface SidebarLayoutProps {
 
 const SidebarLayout: FC<SidebarLayoutProps> = () => {
   const theme = useTheme();
-  const { sidebarToggle } = useContext(SidebarContext);
   const [showMessage, setShowMessage] = useState<boolean>(false);
   const [showChat, setShowChat] = useState<boolean>(false);
   const ref = useRef<any>(null);

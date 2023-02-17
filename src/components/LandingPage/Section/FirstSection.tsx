@@ -3,14 +3,9 @@ import { styled } from "@mui/material/styles";
 import LandingImg from "../../../assets/images/LandingImg.png";
 import Map from "../../../assets/images/Map.png";
 import { useRef } from "react";
-import { ReactComponent as DropDown } from "../../../assets/icons/DropDown.svg";
-import { ReactComponent as Message } from "../../../assets/icons/Message.svg";
-import ModalDialog from "@mui/joy/ModalDialog";
-import Modal from "@mui/joy/Modal";
-import ModalClose from "@mui/joy/ModalClose";
 import CustomizedDialogs from "./ModalStarted";
-import Discuttion from "./Discuttion";
 import { useState } from "react";
+
 const Title = styled(Typography)(({ theme }) => ({
   fontFamily: "Josefin Sans",
   fontStyle: "normal",
