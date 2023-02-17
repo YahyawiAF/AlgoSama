@@ -1,15 +1,11 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { Box, Button, TextField, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import Dialog from "@mui/material/Dialog";
-import DialogTitle from "@mui/material/DialogTitle";
 import DialogContent from "@mui/material/DialogContent";
-import DialogActions from "@mui/material/DialogActions";
 import IconButton from "@mui/material/IconButton";
-import CloseIcon from "@mui/icons-material/Close";
 import { ReactComponent as CloseModal } from "../../../assets/icons/CloseModal.svg";
-import { height } from "@mui/system";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 
 const Modal = styled(DialogContent)(({ theme }) => ({
   width: "450px",
@@ -87,22 +83,21 @@ export default function CustomizedDialogs({
       content: content,
     };
     const contents = `${form.current}`;
-    console.log("form.current", form.current);
-    emailjs
-      .sendForm(
-        "service_fmpomjh",
-        "template_rvilwpi",
-        form.current,
-        "i5fJ9iqi4a9bX4TWH"
-      )
-      .then(
-        result => {
-          console.log(result.text);
-        },
-        error => {
-          console.log(error.text);
-        }
-      );
+    // emailjs
+    //   .sendForm(
+    //     "service_fmpomjh",
+    //     "template_rvilwpi",
+    //     form.current,
+    //     "i5fJ9iqi4a9bX4TWH"
+    //   )
+    //   .then(
+    //     result => {
+    //       console.log(result.text);
+    //     },
+    //     error => {
+    //       console.log(error.text);
+    //     }
+    //   );
   };
 
   return (

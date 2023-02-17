@@ -26,7 +26,6 @@
     "@types/react-swipeable-views": "^0.13.1",
     "@types/react-swipeable-views-utils": "^0.13.4",
     "@types/react-window": "^1.8.5",
-    "@types/yup": "^0.32.0",
     "date-fns": "^2.29.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

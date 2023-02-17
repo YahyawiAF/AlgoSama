@@ -1,31 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import {
   Avatar,
   Box,
-  Button,
-  Divider,
-  List,
   ListItem,
   ListItemAvatar,
   ListItemText,
-  Popover,
-  TextField,
   Typography,
 } from "@mui/material";
-import { styled } from "@mui/material/styles";
-import Dialog from "@mui/material/Dialog";
-import DialogTitle from "@mui/material/DialogTitle";
-import DialogContent from "@mui/material/DialogContent";
-import DialogActions from "@mui/material/DialogActions";
-import IconButton from "@mui/material/IconButton";
-import CloseIcon from "@mui/icons-material/Close";
-import { ReactComponent as CloseModal } from "../../../assets/icons/CloseModal.svg";
-
-import { ReactComponent as Send } from "../../../assets/icons/Send.svg";
-import { height } from "@mui/system";
 
 export default function Discuttion() {
-  const [message, setShowMessage] = useState(false);
   return (
     <Box
       width={"300px"}

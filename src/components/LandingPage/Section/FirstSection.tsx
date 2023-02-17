@@ -1,8 +1,7 @@
-import { Box, Button, Popover, TextField, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import LandingImg from "../../../assets/images/LandingImg.png";
 import Map from "../../../assets/images/Map.png";
-import { useRef } from "react";
 import CustomizedDialogs from "./ModalStarted";
 import { useState } from "react";
 
@@ -39,8 +38,6 @@ const ButtonStart = styled(Button)(({ theme }) => ({
 }));
 const FirstSection = () => {
   const [show, setShow] = useState<boolean>(false);
-
-  const ref = useRef<any>(null);
 
   const handleClose = () => {
     setShow(false);

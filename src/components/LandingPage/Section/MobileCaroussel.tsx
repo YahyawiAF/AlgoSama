@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button, Paper, Typography, Stepper } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { styled } from "@mui/material/styles";
 
@@ -14,7 +14,9 @@ import { ReactComponent as RightArrow } from "../../../assets/icons/RightArrow.s
 import { ReactComponent as LeftArrow } from "../../../assets/icons/LeftArrow.svg";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
+
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
+
 const TitleImage = styled(Typography)(({ theme }) => ({
   fontSize: "20px",
   color: "#000000",
@@ -38,14 +40,7 @@ const Caroussel = styled(Box)(({ theme }) => ({
   //   paddingRight: "40px",
   //   paddingLeft: "40px",
 }));
-const ContentBox = styled(Box)(({ theme }) => ({
-  display: "flex",
 
-  width: "100%",
-
-  justifyContent: "space-between",
-  gap: "30px",
-}));
 const images = [
   {
     label: "Analyze",

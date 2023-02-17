@@ -3,7 +3,6 @@ import { ReactComponent as Cheese } from "../../../assets/icons/chesse.svg";
 import { ReactComponent as Roket } from "../../../assets/icons/Roket.svg";
 import { ReactComponent as Lampe } from "../../../assets/icons/Lampe.svg";
 import { styled } from "@mui/material/styles";
-import React from "react";
 
 const ElementBox = styled(Box)(({ theme }) => ({
   paddingLeft: "40px",

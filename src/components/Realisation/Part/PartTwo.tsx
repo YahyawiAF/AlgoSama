@@ -15,7 +15,7 @@ import { autoPlay } from "react-swipeable-views-utils";
 import { styled, useTheme } from "@mui/material/styles";
 import { ReactComponent as RightArrow } from "../../../assets/icons/RightArrow.svg";
 import { ReactComponent as LeftArrow } from "../../../assets/icons/LeftArrow.svg";
-import { width } from "@mui/system";
+
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 const ArrowButtonRight = styled(Button)(({ theme }) => ({}));
 const ArrowButtonLeft = styled(Button)(({ theme }) => ({}));

@@ -1,5 +1,3 @@
-import React from "react";
-import { Box } from "@mui/system";
 import { Grid, Paper, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
@@ -17,14 +15,6 @@ const ItemPaper = styled(Paper)(({ theme }) => ({
   justifyContent: "center",
   width: "100%",
   boxShadow: "none",
-  gap: "10px",
-}));
-
-const ItemBox = styled(Box)(({ theme }) => ({
-  display: "flex",
-  flexDirection: "row",
-  width: "100%",
-  padding: "10px",
   gap: "10px",
 }));
 

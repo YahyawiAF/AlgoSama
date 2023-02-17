@@ -1,18 +1,14 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import {
   Avatar,
   Box,
   Button,
-  Divider,
-  List,
   ListItem,
   ListItemAvatar,
   ListItemText,
-  Popover,
   TextField,
   Typography,
 } from "@mui/material";
-import { styled } from "@mui/material/styles";
 
 import { ReactComponent as Send } from "../../../assets/icons/Send.svg";
 

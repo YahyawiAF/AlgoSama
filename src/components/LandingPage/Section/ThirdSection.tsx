@@ -1,4 +1,3 @@
-import React from "react";
 import { Box } from "@mui/system";
 import { Paper, Typography } from "@mui/material";
 import useResponsive from "~/hooks/useResponsive";
@@ -10,6 +9,7 @@ import { ReactComponent as Cloud } from "../../../assets/icons/Cloud.svg";
 import { ReactComponent as Job } from "../../../assets/icons/Job.svg";
 import { ReactComponent as Support } from "../../../assets/icons/Support.svg";
 import ThirdSectionMobile from "./ThirdSectionMobile";
+
 const ThirdSection = () => {
   const smUp = useResponsive("down", "md");
   return (

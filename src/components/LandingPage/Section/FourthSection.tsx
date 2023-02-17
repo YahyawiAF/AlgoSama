@@ -16,7 +16,6 @@ import YinYang from "../../../assets/images/YinYang.png";
 import Bag from "../../../assets/images/Bag.png";
 import Chopper from "../../../assets/images/Chopper.png";
 import React from "react";
-import { url } from "inspector";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
 import CustomizedDialogs from "./ModalStarted";

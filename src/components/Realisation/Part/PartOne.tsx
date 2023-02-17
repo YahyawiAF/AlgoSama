@@ -1,7 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import Template from "../../../assets/images/Template.png";
-import React from "react";
 import Map from "../../../assets/images/Map.png";
 const Title = styled(Typography)(({ theme }) => ({
   fontFamily: "Josefin Sans",
