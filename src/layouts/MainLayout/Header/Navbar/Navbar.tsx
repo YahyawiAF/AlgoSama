@@ -28,7 +28,7 @@ const ItemButton = styled(Box)(({ theme }) => ({
   // fontFamily: "Josefin Sans",
   // fontStyle: "normal",
   // fontWeight: " 700",
-  lineHeight: "24px",
+  lineHeight: "10px",
 }));
 
 const Navbar = () => {
@@ -52,7 +52,7 @@ const Navbar = () => {
             <ItemButton>
               <a
                 href="#home"
-                style={{ textDecoration: "none", color: "#000000" }}
+                style={{ textDecoration: "none", color: "black" }}
                 onClick={() => {
                   navigate("/");
                 }}
@@ -65,7 +65,7 @@ const Navbar = () => {
             <ItemButton>
               <a
                 href="#services"
-                style={{ textDecoration: "none", color: "#000000" }}
+                style={{ textDecoration: "none", color: "black" }}
                 onClick={() => {
                   navigate("/");
                 }}
@@ -78,7 +78,7 @@ const Navbar = () => {
             <ItemButton>
               <a
                 href="#process"
-                style={{ textDecoration: "none", color: "#000000" }}
+                style={{ textDecoration: "none", color: "black" }}
                 onClick={() => {
                   navigate("/");
                 }}
@@ -91,7 +91,7 @@ const Navbar = () => {
             <ItemButton>
               <a
                 href="#about"
-                style={{ textDecoration: "none", color: "#000000" }}
+                style={{ textDecoration: "none", color: "black" }}
                 onClick={() => {
                   navigate("/");
                 }}
@@ -108,7 +108,7 @@ const Navbar = () => {
             >
               <a
                 href="#contact"
-                style={{ textDecoration: "none", color: "#000000" }}
+                style={{ textDecoration: "none", color: "black" }}
               >
                 Contact
               </a>
@@ -122,7 +122,7 @@ const Navbar = () => {
             >
               <a
                 href="#realisation"
-                style={{ textDecoration: "none", color: "#000000" }}
+                style={{ textDecoration: "none", color: "black" }}
               >
                 Realisations
               </a>

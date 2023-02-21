@@ -30,7 +30,7 @@ function HomePage() {
           }}
         >
           <FirstSection />
-          <SecondSection />
+
           <ThirdSection />
           <FourthSection />
         </Box>

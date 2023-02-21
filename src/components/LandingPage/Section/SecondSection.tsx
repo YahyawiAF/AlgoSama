@@ -22,7 +22,7 @@ const PaperWarper = styled(Paper)(({ theme }) => ({
   flexDirection: "row",
 
   width: "100%",
-  height: "354px",
+  height: "200px",
   boxShadow: "none",
   borderRadius: "0",
 
@@ -36,8 +36,8 @@ const PaperWarper = styled(Paper)(({ theme }) => ({
 }));
 
 const Text = styled(Typography)(({ theme }) => ({
-  fontSize: "36px",
-  color: "#000000",
+  fontSize: "25px",
+  color: "white",
   [theme.breakpoints.down("md")]: {
     fontSize: "28px",
   },
@@ -47,8 +47,8 @@ const Text = styled(Typography)(({ theme }) => ({
   },
 }));
 const TitleText = styled(Typography)(({ theme }) => ({
-  fontSize: "40px",
-  color: "#000000",
+  fontSize: "32px",
+  color: "white",
   [theme.breakpoints.down("md")]: {
     fontSize: "32px",
   },
@@ -106,7 +106,7 @@ const SecondSection = () => {
         </ElementBox>
         <Box>
           <Typography>
-            <Roket width={"140px"} />
+            <Roket width={"140px"} color={"black"} />
           </Typography>
         </Box>
       </PaperWarper>

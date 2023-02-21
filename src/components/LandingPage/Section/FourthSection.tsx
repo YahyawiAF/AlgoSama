@@ -28,7 +28,7 @@ const Title = styled(Typography)(({ theme }) => ({
   fontWeight: "400",
   fontSize: "48px",
 
-  color: "#000000",
+  color: "white",
   [theme.breakpoints.between("md", "lg")]: {
     fontSize: "36px",
   },
@@ -51,7 +51,7 @@ const SubTitle = styled(Typography)(({ theme }) => ({
 }));
 const TextDescription = styled(Typography)(({ theme }) => ({
   fontSize: "32px",
-  color: "#000000",
+  color: "white",
   padding: "20px",
   [theme.breakpoints.between("md", "lg")]: {
     fontSize: "24px",
@@ -67,7 +67,7 @@ const TextAppear = styled(Typography)(({ theme }) => ({
   fontWeight: "400",
   fontSize: "32px",
   lineHeight: "117.5%",
-  color: "#000000",
+  color: "white",
   [theme.breakpoints.between("md", "lg")]: {
     fontSize: "28px",
   },
@@ -82,7 +82,7 @@ const TitleAppear = styled(Typography)(({ theme }) => ({
   fontStyle: "normal",
   fontWeight: "400",
 
-  color: "#000000",
+  color: "white",
   [theme.breakpoints.between("md", "lg")]: {
     fontSize: "32px",
   },
@@ -95,14 +95,14 @@ const TitleAppear = styled(Typography)(({ theme }) => ({
 }));
 const TitleImage = styled(Typography)(({ theme }) => ({
   fontSize: "36px",
-  color: "#000000",
+  color: "white",
   [theme.breakpoints.between("md", "lg")]: {
     fontSize: "26px",
   },
 }));
 const TextImage = styled(Typography)(({ theme }) => ({
   fontSize: "32px",
-  color: "#000000",
+  color: "white",
   [theme.breakpoints.between("md", "lg")]: {
     fontSize: "22px",
   },
@@ -230,7 +230,7 @@ const ContactTitle = styled(Typography)(({ theme }) => ({
   fontSize: "64px",
   lineHeight: "64px",
   textAlign: "center",
-  color: "#FFFFFF",
+  color: "white",
   [theme.breakpoints.down("md")]: {
     fontSize: "36px",
     // fontSize: "18px",
@@ -462,8 +462,7 @@ const FourthSection = () => {
 
           width: "100%",
           gap: "150px",
-          background:
-            "linear-gradient(357deg, #0B6AB0 0%, rgba(11, 106, 176, 0) 100%)",
+          background: "black",
         }}
       >
         <Box
@@ -471,12 +470,13 @@ const FourthSection = () => {
             display: "flex",
             flexDirection: "column",
             padding: "20px",
+            textAlign: "center",
           }}
           id="process"
         >
           <Title>Our Process</Title>
           <SubTitle>THE MAGIC IS IN THE DETAILS</SubTitle>
-          <TextDescription>
+          <TextDescription sx={{ textAlign: "start" }}>
             We love crafting unique products tailored to our clients’
             requirements, using a customer-centric Agile product delivery
             approach. This ensures the delivery of a continuous flow of valuable
@@ -541,19 +541,24 @@ const FourthSection = () => {
             flexDirection: "column",
           }}
         >
-          <AboutBox>
+          <AboutBox
+            sx={{
+              backgroundColor: "white",
+            }}
+          >
             <Box
               sx={{
                 display: "flex",
                 flexDirection: "column",
+                textAlign: "center",
               }}
               id="about"
             >
-              <Title>About</Title>
+              <Title sx={{ color: "#777777" }}>About</Title>
               <SubTitle>WE BRING YOUR IDEAS TO LIFE</SubTitle>
             </Box>
             <AboutTextContainer>
-              <TextDescription>
+              <TextDescription sx={{ color: "#777777" }}>
                 We love crafting unique products tailored to our clients’
                 requirements, using a customer-centric Agile product delivery
                 approach. This ensures the delivery of a continuous flow of

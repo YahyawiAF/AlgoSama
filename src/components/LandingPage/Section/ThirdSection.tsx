@@ -24,10 +24,24 @@ const ThirdSection = () => {
       <Box
         sx={{ display: "flex", flexDirection: "column", paddingLeft: "20px" }}
       >
-        <Typography variant="h3" color={"#000000"}>
+        <Typography
+          variant="h3"
+          color={
+            "linear-gradient(180deg, #EF86B0 45.8%, rgba(239, 134, 176, 0) 100%)"
+          }
+          sx={{
+            textDecoration: "underline",
+            textDecorationColor: "#777777",
+            textAlign: "center",
+          }}
+        >
           Our Services
         </Typography>
-        <Typography fontSize={"24px"} color={"#777777"}>
+        <Typography
+          fontSize={"24px"}
+          color={"#777777"}
+          sx={{ textAlign: "center" }}
+        >
           YOUR PARTNER FROM IDEATION TO DELIVERY
         </Typography>
       </Box>
